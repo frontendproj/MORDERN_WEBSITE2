@@ -1,13 +1,17 @@
 *{
 	margin:0;
 	padding:0;
+	box-sizing: border-box;
 
 }
+@media screen and (min-width: 600px){
+
 header{
-	width: 100%;
+	max-width: 100%;
 	height: 100vh;
 	background-image: linear-gradient(to top left, #c9ffff 70%, #87ffff 20%);
 }
+
 .navsection{
 	width: 100%;
 	height: 20vh;
@@ -16,37 +20,41 @@ header{
 	align-items: center;
 	background-image: linear-gradient(to left bottom , #c9ffff 20%, #87ffff 40% );
 }
-.logo{width:50%; box-sizing: border-box;padding-left: 100px;}
+
+ .logo{width:50%; box-sizing: border-box;padding-left: 100px;}
 .logo h1{
 	text-transform: uppercase;
 	font-size: 1.6rem;
 	animation: myanimate 2s linear infinite;
 	animation-direction: alternate;
-     }
-@keyframes myanimate{
+     } 
+ @keyframes myanimate{
 	from{padding-left: 40px;}
 	to{padding-right: 40px;}
-}
-nav {
+} 
+ nav {
 
 	width: 50%;
 	display: flex;
+	text-align: center;
 	justify-content: space-around;
 	
-     }
-nav a{
+	
+     } 
+ nav a{
      
     text-decoration: none;
 	text-transform: uppercase;
 	color: black;
+
 	font-size: 1.2rem;
 	position: relative;
-    }
+    } 
 
-    nav a:first-child{
-    	color: #00ffbf;
+     nav a:first-child{
+    	color: #ec12ab;
     }
-    nav a:before{
+    nav a::before{
     	content: "";
     	position: absolute;
     	top:110%;
@@ -58,19 +66,20 @@ nav a{
 
     	
 
-    }
-    nav a:hover:before{
+    } 
+    nav a:hover::before{
     	width: 100%;
-    }
+    } 
     main{
     	height: 80vh;
     	display: flex;
     	justify-content: space-around;
     	align-items: center;
     }
-
-    .rightside{
+ 
+   
  /*advanced border radius fancy*/
+   .rightside{
 border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
 background-color: #87ffff;
     }
@@ -84,7 +93,7 @@ background-color: #87ffff;
    color: #000;
    text-transform: uppercase;
 }
-.leftside h3:after{
+/* .leftside h3::after{
 content: "";
 margin-bottom: 20px;
 font-size: 40px;
@@ -95,20 +104,15 @@ left: 14%;
 top:52%;
 background: #000;
 
-}
-.leftside h1{
-	font-size: 24px;
-	word-spacing: 4px;
-	font-weight: 500px;
-	text-transform: uppercase;
-	margin-bottom: 10px;
-	margin-top: 10px;
+} */
 
-}
 .leftside h2{
 	font-size: 24px;
 	word-spacing: 4px;
 	font-weight: 170;
 	text-transform: uppercase;
 	
+}
+.leftside a input{ width: 100px; line-height: 40px; color: #ec12ab;
+border-radius: 50px; border: none; font-size: 1rem; background-color: #87ffff; }
 }
